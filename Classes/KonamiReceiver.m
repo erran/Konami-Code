@@ -7,7 +7,6 @@
 //
 
 #import "KonamiReceiver.h"
-#import "ViewController.h"
 
 @interface KonamiReceiver ()
 

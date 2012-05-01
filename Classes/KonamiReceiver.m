@@ -149,8 +149,7 @@
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 1){
-        ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondviewcontroller"];
-        [self presentModalViewController:viewController animated:YES];
+        //Do Something.
     }
 }
 

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class ViewController;
 @interface KonamiReceiver : UIViewController<UIAlertViewDelegate>{}
 
 

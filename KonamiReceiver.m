@@ -7,6 +7,7 @@
 //
 
 #import "KonamiReceiver.h"
+#import "ViewController.h"
 
 @interface KonamiReceiver ()
 
@@ -128,6 +129,8 @@
 -(void)konami{
     NSLog(@"Konami Code");
     konamiInt++;
+    aBool = 0;
+    bBool = 0;
     b.hidden = YES;
     a.hidden = YES;    
     UIAlertView *alert = [[[UIAlertView alloc] initWithTitle:@"Konami Code Entered" message:@"Do you want to do something cool?" delegate:self cancelButtonTitle:@"Nah." otherButtonTitles:@"Sure!", nil] autorelease];
@@ -148,7 +151,8 @@
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     if (buttonIndex == 1){
-        //Do Something.
+        ViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"secondviewcontroller"];
+        [self presentModalViewController:viewController animated:YES];
     }
 }
 
